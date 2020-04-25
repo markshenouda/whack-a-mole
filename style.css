@@ -1,0 +1,103 @@
+@font-face {
+	font-family: WaltographRegular;
+	src: url(font/waltograph42.otf);
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-image: url('images/background.svg');
+	height: 100%;
+	font-family: WaltographRegular;
+	color: #ffffff;
+	cursor: url('images/ham1.png'), auto;
+}
+
+.mouseUp {
+	cursor: url('images/ham1.png'), auto;
+}
+
+.mouseDown {
+	cursor: url('images/ham2.png'), auto;
+}
+
+.center {
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	margin: auto;
+}
+
+
+.main {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	height: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+	.main {
+	  display: grid;
+	  grid-template-columns: 100%;
+	}
+}
+
+
+.options {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+#play-btn {
+	background-color: red;
+	padding: 40px;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+#stop-btn {
+	background-color: orange;
+	padding: 40px;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+
+.logo {
+	
+
+	font-size: 80px;
+	position: relative;
+	margin-top: 20px;
+}
+
+.grid {
+	width: 469px;
+	height: 469px;
+	
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	
+}
+
+.square {
+	width: 150px;
+	height: 150px;
+	border-style: solid;
+	border-color: white;
+
+}
+
+.mole {
+	background-image: url('images/mole.png');
+	background-size: cover;
+}
+
+.footer {
+	grid-column: auto/span 1;
+	font-size: 40px;
+}

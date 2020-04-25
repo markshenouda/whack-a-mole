@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Whack a Mole | By mark S. Shenouda</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/logo.png" type="image/png" sizes="16x16">
+</head>
+<body>
+
+	<div class="main">
+		<div class="panel">
+			<div class="logo center">
+				<span style="position: relative;top: -40px;right:-15px;">Whack a Mole</span>
+				<img src="images/logo.png" alt="" style="height: 140px;position: relative;">
+			</div>
+			<div class="options center">
+				<div style="font-size: 50px;margin-bottom: 40px;">Score: <span id="score">0</span> | Time left: <span id="time-left">60</span> </div>
+				<button id="play-btn">Play</button>
+				<button id="stop-btn" style="display: none;">Stop</button>
+
+			</div>
+		</div>
+		
+		<div style="display: flex;">
+			
+			<div class="center" style="margin-top: 70px;margin-bottom: 30px;">
+				<div class="grid" style="margin: auto;">
+					<div class="square" id="1"></div>
+					<div class="square" id="2"></div>
+					<div class="square" id="3"></div>
+					<div class="square" id="4"></div>
+					<div class="square" id="5"></div>
+					<div class="square" id="6"></div>
+					<div class="square" id="7"></div>
+					<div class="square" id="8"></div>
+					<div class="square" id="9"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer center">
+			By <a href="https://twitter.com/MarkSShenouda" style="color: #ffffff;">Mark S. Shenouda</a> 
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+	
+</body>
+</html>
