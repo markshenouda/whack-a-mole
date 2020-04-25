@@ -115,9 +115,9 @@ stopBtn.addEventListener('mouseup', () => {
 	stopBtn.style.display = 'none'
 	playBtn.style.display = ''
 	currentTime = 60
-	result = 0
 	endSound.play()
 	alert('Game Over, Your score is ' + result)
+	result = 0
 	timeleft.textContent = currentTime
 	score.textContent = result
 })
